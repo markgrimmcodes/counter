@@ -10,7 +10,9 @@ body {
 .header {
   display: flex;
   font-family: "Special Elite";
-  background-color: yellow;
+  background-color: gold;
+  padding: 10px;
+  user-select: none;
 }
 .btn {
   all: unset;
@@ -20,13 +22,31 @@ body {
   border: 2px solid black;
   padding: 2px;
   box-shadow: 2px 5px darkgray;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: antiquewhite;
+}
+.btn:active {
+  background-color: aqua;
 }
 .count-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
   height: 50vh;
+
+  background-image: linear-gradient(gold, gold);
+  background-repeat: no-repeat;
+  background-size: 0%;
 }
-.num {
+#num {
   font-size: 500%;
+  background-color: transparent;
+  user-select: none;
+}
+footer {
+  user-select: none;
 }
